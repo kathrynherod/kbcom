@@ -1,0 +1,21 @@
+.portfolio-page {
+    h2 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 1em;
+    }
+    .portfolio-image-container {
+        background: color("blue-grey", "lighten-5");
+        border: solid color("blue-grey", "lighten-4") 1px;
+        display: table-cell;
+        height: 333px;
+        text-align: center;
+        vertical-align: middle;
+
+        img {
+            margin: 0 auto;
+            width: 85%;
+        }
+    }
+}

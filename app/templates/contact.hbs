@@ -1,0 +1,42 @@
+<div class="page content-page contact-page">
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            {{#unless isFormSent}}
+                <h1>Contact me</h1>
+                {{!-- action="http://kevinboucher.com/cgi-sys/formmail.pl"
+                        method="post" --}}
+                <form
+                        {{action "sendContactForm" on="submit"}}
+                    >
+
+                        <input type="hidden" name="recipient" value="kevin@kevinboucher.com">
+                        <input type="hidden" name="subject" value="KevinBoucher.com contact email">
+                        <input type="hidden" name="redirect" value="http://kevinboucher.com/contact?success">
+
+                        <div class="input-field">
+                            {{input id="contact-name" name="name" type="text" value=model.name}}
+                            <label for="contact-name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            {{input id="contact-email" name="email" type="email" value=model.email}}
+                            <label for="contact-email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            {{textarea id="contact-message" name="tellme" class="materialize-textarea" value=model.message}}
+                            <label for="contact-message">Message</label>
+                        </div>
+                        <div class="form-buttons">
+                            {{input type="submit" name="submit" class="waves-effect waves-light btn" value="Send"}}
+                            {{!-- <button class="waves-effect waves-light btn">Send</button> --}}
+                        </div>
+                    </form>
+            {{else}}
+                <h1>Thanks!</h1>
+                <p class="flow-text">If you do not receive a timely response, please try emailing me directly at: kevin[at]kevinboucher[dot]com, or calling (FIVE ONE TWO) NINE ONE SEVEN-SEVENTY-FIVE SEVENTY-FIVE.</p>
+            {{/unless}}
+        </div>
+    </div>
+    {{#unless isFormSent}}
+        {{site-footer}}
+    {{/unless}}
+</div>

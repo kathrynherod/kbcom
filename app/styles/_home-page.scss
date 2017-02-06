@@ -1,0 +1,53 @@
+.home-page {
+    &.full-screen {
+        /*
+            http://codepen.io/zitrusfrisch/pen/ClGLt
+        */
+        h1 {
+            font: 600 1.618em/1 'Raleway', sans-serif;
+            color: rgba(0, 0, 0, .6);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .5em;
+            line-height: 1.5;
+            position: absolute;
+            top: 25%;
+            width: 100%;
+
+            span,
+            span:after {
+                color: #efedce;
+                display: inline-block;
+                font-weight: 900;
+                letter-spacing: .1em;
+                line-height: 1.25;
+                position: relative;
+                /* padding: .2em 0 .25em 0; */
+                white-space: nowrap;
+            }
+
+            span {
+                font-size: 4em;
+                z-index: 100;
+                text-shadow: .04em .04em 0 $kbcom-background;
+            }
+
+            span:after {
+                content: attr(data-shadow-text);
+                color: rgba(0, 0, 0, .35);
+                text-shadow: none;
+                position: absolute;
+                left: .0875em;
+                top: .0875em;
+                z-index: -1;
+                -webkit-mask-image: url(http://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+            }
+
+            .nav-buttons {
+                bottom: 2rem;
+                position: fixed;
+                width: 100%;
+            }
+        }
+    }
+}

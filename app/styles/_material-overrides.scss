@@ -1,0 +1,9 @@
+$h1-fontsize: 5rem;
+$secondary-color: color("light-blue", "base");
+$button-flat-color: rgba(0, 0, 0, .6);
+$button-floating-background: color("light-blue", "base");
+$button-floating-background-hover: darken(color("light-blue", "base"), 10%);
+$button-raised-background: color("light-blue", "base");
+$button-raised-background-hover: darken(color("light-blue", "base"), 10%);
+$input-focus-color: $secondary-color;
+$link-color: color("light-blue", "darken-3");
