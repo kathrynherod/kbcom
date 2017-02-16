@@ -1,14 +1,14 @@
 .btn {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .fixed-action-btn {
     &.left {
-        left: 23px;
+        left: 1.618em;
         right: auto;
     }
     &.top {
-        top: 23px;
+        top: 1.618em;
         bottom: auto;
     }
 }

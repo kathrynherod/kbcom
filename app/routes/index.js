@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    title: 'Résumé | Kevin Boucher',
+    title: 'Kevin Boucher | Web design & development',
 });

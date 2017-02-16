@@ -1,53 +1,49 @@
 .home-page {
     &.full-screen {
-        /*
-            http://codepen.io/zitrusfrisch/pen/ClGLt
-        */
+        height: 100vh;
+        padding-top: 24vh;
+
         h1 {
-            font: 600 1.618em/1 'Raleway', sans-serif;
-            color: rgba(0, 0, 0, .6);
+            font-family: $display-font;
+            font-weight: 900;
+            letter-spacing: .146em;
+            line-height: 1.382em;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: .5em;
-            line-height: 1.5;
-            position: absolute;
-            top: 25%;
-            width: 100%;
 
             span,
             span:after {
-                color: #efedce;
+                color: rgba(255, 255, 255, .9);
                 display: inline-block;
                 font-weight: 900;
-                letter-spacing: .1em;
-                line-height: 1.25;
                 position: relative;
-                /* padding: .2em 0 .25em 0; */
-                white-space: nowrap;
-            }
-
-            span {
-                font-size: 4em;
+                text-shadow: .02em .02em 0 $kbcom-background;
                 z-index: 100;
-                text-shadow: .04em .04em 0 $kbcom-background;
             }
-
             span:after {
                 content: attr(data-shadow-text);
                 color: rgba(0, 0, 0, .35);
-                text-shadow: none;
-                position: absolute;
-                left: .0875em;
-                top: .0875em;
-                z-index: -1;
-                -webkit-mask-image: url(http://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
-            }
-
-            .nav-buttons {
-                bottom: 2rem;
-                position: fixed;
                 width: 100%;
+                position: absolute;
+                text-shadow: none;
+                left: .0618em;
+                top: .0618em;
+                z-index: -1;
+                -webkit-mask-image: url(/images/mask.png);
             }
+            .tagline {
+                color: $button-flat-color;
+                font-size: .382em;
+                line-height: 1.618em;
+                letter-spacing: .1em;
+                margin: .382em 0 0;
+            }
+        }
+        .nav-buttons {
+            bottom: 1.618em;
+            font-size: 1.618rem;
+            position: fixed;
+            width: 100%;
         }
     }
 }

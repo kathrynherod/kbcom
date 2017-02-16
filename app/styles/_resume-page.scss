@@ -1,6 +1,6 @@
 .resume-page {
     h2 {
-        border-bottom: solid rgba(0, 0, 0, .6) 1px;
+        border-bottom: solid $button-flat-color 1px;
         padding-bottom: .382em;
     }
     h3 {
@@ -16,7 +16,7 @@
             display: inline-block;
 
             &:after {
-                content: " •";
+                content: "•";
             }
 
             &:last-child:after {
@@ -31,7 +31,5 @@
     }
     .date-range {
         color: rgba(0, 0, 0, .4);
-    }
-    .skills-summary {
     }
 }

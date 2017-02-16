@@ -3,10 +3,22 @@ import Ember from 'ember';
 const { Route } = Ember;
 
 export default Route.extend({
-    model: function() {
+    title: 'Contact | Kevin Boucher',
+
+    /**
+        Reset contact form on exit
+     */
+    deactivate() {
+        this.controller.setProperties({
+            isFormSent: false,
+            isHuman: false,
+            showCaptchaError: false,
+        });
+    },
+    model() {
         return this.get('store').createRecord('contact-form');
     },
-    setupController: function(controller , model ) {
+    setupController(controller , model) {
         controller.set('model', model);
     },
 });

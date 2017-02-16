@@ -20,8 +20,8 @@ module.exports = function(defaults) {
     // please specify an object with the list of modules as keys
     // along with the exports of each module as its value.
 
-    app.import('/Users/kboucher/Development/repos/kbcom/bower_components/materialize/dist/js/materialize.min.js');
-    app.import('/Users/kboucher/Development/repos/kbcom/bower_components/moment/min/moment.min.js');
+    app.import('bower_components/materialize/dist/js/materialize.min.js');
+    app.import('bower_components/moment/min/moment.min.js');
 
     return app.toTree();
 };

@@ -1,8 +1,18 @@
+/**
+    Renders fixed action buttons navigation.
+
+    @module NavigationButtonsComponent
+ */
+
 import Ember from 'ember';
 
 const { computed, Component } = Ember;
 
 export default Component.extend({
+    /**
+        Returns the desired icon and position based on the
+        current route.
+     */
     icon: computed('route', function() {
         const route = this.get('route');
 

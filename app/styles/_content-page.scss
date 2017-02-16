@@ -1,12 +1,14 @@
 .content-page {
+    background: #fff;
+
     h1 {
-        font-family: Raleway;
+        font-family: $display-font;
         font-weight: 900;
         padding-top: .382em;
     }
     h2,
     h3 {
-        font-family: Raleway;
+        font-family: $display-font;
         font-weight: 600;
     }
 }

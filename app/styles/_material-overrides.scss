@@ -1,9 +1,15 @@
-$h1-fontsize: 5rem;
-$secondary-color: color("light-blue", "base");
-$button-flat-color: rgba(0, 0, 0, .6);
-$button-floating-background: color("light-blue", "base");
-$button-floating-background-hover: darken(color("light-blue", "base"), 10%);
-$button-raised-background: color("light-blue", "base");
-$button-raised-background-hover: darken(color("light-blue", "base"), 10%);
-$input-focus-color: $secondary-color;
-$link-color: color("light-blue", "darken-3");
+$h1-fontsize: 4.236rem !default;
+$h2-fontsize: 2.618rem !default;
+$h3-fontsize: 1.618rem !default;
+$h4-fontsize: 1.382rem !default;
+$h5-fontsize: 1rem !default;
+$h6-fontsize: 1rem !default;
+
+$secondary-color: color("light-blue", "base") !default;
+$button-flat-color: rgba(0, 0, 0, .6) !default;
+$button-floating-background: color("light-blue", "base") !default;
+$button-floating-background-hover: darken(color("light-blue", "base"), 10%) !default;
+$button-raised-background: color("light-blue", "base") !default;
+$button-raised-background-hover: darken(color("light-blue", "base"), 10%) !default;
+$input-focus-color: $secondary-color !default;
+$link-color: color("light-blue", "darken-3") !default;

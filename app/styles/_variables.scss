@@ -1,1 +1,5 @@
-$kbcom-background: color("light-blue", "lighten-1") !default;
+$kbcom-theme: "light-blue" !default;
+$kbcom-secondary-theme: "blue-grey" !default;
+$kbcom-background: color($kbcom-theme, "lighten-1") !default;
+
+$display-font: "Raleway", sans-serif;

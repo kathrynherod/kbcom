@@ -1,0 +1,17 @@
+.input-field {
+    label {
+        &:after {
+            font-size: 1rem;
+            padding: .618em 0;
+        }
+    }
+}
+
+.form-buttons,
+.google-recaptcha {
+    margin: $input-margin;
+}
+
+.error {
+    color: $input-error-color;
+}

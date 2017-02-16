@@ -1,0 +1,34 @@
+$image-box-bg-color: color($kbcom-secondary-theme, "lighten-5");
+$image-box-border-color: color($kbcom-secondary-theme, "lighten-4");
+
+.image-container {
+    img {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+.image-preview {
+    background: $image-box-bg-color;
+    border: solid $image-box-border-color 1px;
+    display: table-cell;
+    padding: .618rem 0 .382rem;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+        @extend .z-depth-1;
+
+        background: darken($image-box-bg-color, 3%);
+        border: solid darken($image-box-border-color, 3%) 1px;
+    }
+}
+.image-preview-modal {
+    max-height: 80%;
+    width: 75%;
+
+    .modal-content {
+        img {
+            max-width: 100%;
+        }
+    }
+}
