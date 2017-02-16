@@ -1,21 +1,28 @@
+$font-transition: font-size 1s;
+
 body,
 html {
     font-size: 1em;
     line-height: 1.618;
 }
 
+h1,
+h2,
+h3 {
+    transition: $font-transition;
+}
+
 h1 {
-    font-size: 6.854rem;
+    font-size: 3rem;
     margin: 0 0 .382em;
-    transition: font-size .5s;
 }
 
 h2 {
-    font-size: 2.618rem;
+    font-size: 1.618rem;
 }
 
 h3 {
-    font-size: 1.618rem;
+    font-size: 1.381rem;
 }
 
 p {
@@ -29,14 +36,26 @@ ul.bulleted li {
     margin: 0 1.618em;
 }
 
-@media (max-width: 40rem) {
+@media (min-width: 23em) and (max-width: 40em) {
     h1 {
-        font-size: 2.618rem;
+        font-size: 4.236rem;
     }
     h2 {
-        font-size: 1.618rem;
+        font-size: 2.618rem;
     }
     h3 {
-        font-size: 1.382rem;
+        font-size: 1.618rem;
+    }
+}
+
+@media (min-width: 41em) {
+    h1 {
+        font-size: 6.854rem;
+    }
+    h2 {
+        font-size: 4.236rem;
+    }
+    h3 {
+        font-size: 2.618rem;
     }
 }
